@@ -1,0 +1,4 @@
+FROM ubuntu:latest
+WORKDIR /usr
+CMD echo Hello World!!
+CMD pwd
