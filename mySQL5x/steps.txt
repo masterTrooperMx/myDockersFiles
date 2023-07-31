@@ -1,0 +1,11 @@
+# https://medium.com/@ahmedamedy/mysql-clustering-with-docker-611dc28b8db7
+# siguiendo los pasos de este sitio
+# crear una red de docker
+# docker network create cluster — subnet=192.168.0.0/16
+docker network create \
+  --subnet=192.168.0.0/16 \
+ cluster 
+
+# da8be27133110379cb1a61a84ce33394cf710589f098a96cdd681c8f68b5671e
+
+

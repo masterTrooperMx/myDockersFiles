@@ -1,0 +1,23 @@
+CREATE TABLE ECategory(
+	category_id INT AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(20) NOT NULL,
+	gamma VARCHAR(20) DEFAULT NULL,
+	parent INT DEFAULT NULL
+);
+
+INSERT INTO ECategory VALUES
+(1, 'ELECTRONICS', NULL, NULL),
+(2, 'CELLS', 'HIGH', 1),
+(3, 'iPHONE', 'HIGH', 2),
+(4, 'SAMSUNG', 'MED', 2),
+(5, 'GOOGLE PHONE', 'LOW', 2),
+(6, 'TABLETS', 'MED', 1),
+(7, 'iPAD', 'HIGH', 6),
+(8, 'iPAD light', 'MED', 7),
+(9, 'HUAWEI', 'MED', 6),
+(10, 'ACER', 'LOW', 6)
+(11, 'ACCESORIES', 'LOW', 1)
+(12, 'CHARGER', 'HIGH', 11)
+(13, 'PODS', 'MED', 11)
+(14, 'SPEAKER', 'LOW', 11)
+;
