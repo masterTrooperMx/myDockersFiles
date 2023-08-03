@@ -14,9 +14,9 @@ ENV MYSQL_USER=$MYSQL_USER
 ENV MYSQL_PASSWORD=$MYSQL_PASSWORD
 ENV MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
 
-ADD TAREA-4_JECM.sql /etc/mysql/TAREA-4_JECM.sql
+ADD Tarea-4_JECM.sql /etc/mysql/Tarea-4_JECM.sql
 
-RUN sed -i 's/MYSQL_DATABASE/'$MYSQL_DATABASE'/g' /etc/mysql/TAREA-4_JECM.sql
+RUN sed -i 's/MYSQL_DATABASE/'$MYSQL_DATABASE'/g' /etc/mysql/Tarea-4_JECM.sql
 RUN cp /etc/mysql/TAREA-4_JECM.sql /docker-entrypoint-initdb.d
 
 EXPOSE 3306
